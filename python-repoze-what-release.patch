@@ -1,0 +1,14 @@
+--- repoze/what/release.py.orig	2009-08-10 10:36:03.000000000 -0400
++++ repoze/what/release.py	2009-08-10 10:36:40.000000000 -0400
+@@ -24,10 +24,7 @@
+ 
+ import os
+ 
+-_here = os.path.abspath(os.path.dirname(__file__))
+-_root = os.path.dirname(os.path.dirname(_here))
+-
+-version = open(os.path.join(_root, 'VERSION.txt')).readline().rstrip()
++version = '$VERSION' 
+ 
+ # The major version: If version=='3.0.2rc4', the major version is int(3).
+ major_version = int(version.split('.')[0])

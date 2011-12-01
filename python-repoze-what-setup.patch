@@ -1,0 +1,12 @@
+--- setup.py.orig	2009-02-09 12:15:10.000000000 -0500
++++ setup.py	2009-02-09 12:15:33.000000000 -0500
+@@ -17,9 +17,6 @@
+ 
+ import os
+ 
+-from ez_setup import use_setuptools
+-use_setuptools()
+-
+ from setuptools import setup, find_packages
+ 
+ here = os.path.abspath(os.path.dirname(__file__))
